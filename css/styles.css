@@ -1,0 +1,362 @@
+/* General styles - start */
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    color: #777777;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 100px 0px;
+}
+
+section {
+    padding: 100px 0px;
+    background-color: #fff;
+}
+
+footer h2,
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer header p,
+section header p {
+    font-family: 'Droid Serif', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.social-icons i {
+    border-radius: 50%;
+    background-color: #222222;
+    font-size: 1.5em;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    transition: all .2s ease-out;
+}
+
+.social-icons i:hover {
+    background-color: #0ed8d6;
+    color: #fff;
+}
+
+/* General styles - end */
+/* Navbar styles - start */
+.navbar {
+    padding: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-scroll {
+    background-color: rgba(14, 216, 214, 0.85);
+    transition: all .4s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Droid Serif';
+    font-style: italic;
+    color: #fff;
+    transition: all .3s ease-out;
+}
+
+.navbar .navbar-brand:hover {
+    color: #0ed8d6;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #0ed8d6;
+}
+
+.navbar-scroll .navbar-brand:hover {
+    color: #777777;
+}
+
+.navbar-scroll .nav-item .nav-link:hover {
+    color: #777777;
+}
+
+/* Navbar styles - end */
+/* Main header styles - start */
+.main-header {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/DeathtoStock_Wired2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.main-header h2 {
+    font-family: 'Droid Serif', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.main-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-header a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #0ed8d6;
+    border: 2px solid #0ed8d6;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    transition: all .3s;
+    margin-top: 30px;
+}
+
+.main-header a:hover {
+    color: #0ed8d6;
+    background-color: #fff;
+    border: 2px solid #0ed8d6;
+}
+
+/* Main header styles - end */
+/* Section services - start */
+#services {
+    background-color: #fff;
+}
+
+#services i {
+    border: 2px solid #0ed8d6;
+    border-radius: 50%;
+    background-color: #0ed8d6;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 22px;
+    margin-bottom: 25px;
+    transition: all .4s ease-in-out;
+}
+
+#services i:hover {
+    background-color: #fff;
+    border: 2px solid #0ed8d6;
+    color: #0ed8d6;
+    transform: rotate(360deg);
+}
+
+/* Section services - end */
+/* Section portfolio - start */
+#portfolio {
+    background: #fafafa;
+}
+
+#portfolio .portfolio-item-contener {
+    overflow: hidden;
+}
+
+#portfolio .portfolio-img {
+    height: 20vw;
+    background-position: center;
+    background-size: cover;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+#portfolio .portfolio-img:hover {
+    transform: scale(1.2);
+}
+
+#portfolio .portfolio-img::before {
+    content: '\f067';
+    font-family: FontAwesome;
+    font-size: 3em;
+    position: absolute;
+    line-height: 20vw;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(14, 216, 214, 0.75);
+    color: #fff;
+    opacity: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+#portfolio .portfolio-img:hover::before {
+    opacity: 1;
+}
+
+#portfolio-img-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio-img-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-img-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-img-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-img-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-img-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+figcaption {
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
+/* Section portfolio - end */
+/* Section team - start */
+#team .team-item-img {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#team .social-icons a {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+#team-item-img1 {
+    background-image: linear-gradient(to top, rgba(14, 216, 214, 0.7), transparent), url(../img/team/man-1.jpg);
+}
+
+#team-item-img2 {
+    background-image: linear-gradient(to top, rgba(14, 216, 214, 0.7), transparent), url(../img/team/woman-1.jpg);
+}
+
+#team-item-img3 {
+    background-image: linear-gradient(to top, rgba(14, 216, 214, 0.7), transparent), url(../img/team/man-2.jpg);
+}
+
+#team .team-item-caption h3 {
+    margin-bottom: 0;
+}
+
+/* Section team - end */
+/* Section form - start */
+#contact {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/footer/world-map.jpg);
+    padding: 100px 0px;
+}
+
+#contact header,
+  #contact p {
+    color: #fff;
+}
+
+#contact #footer-textarea {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 3;
+}
+
+#contact .form-control-lg {
+    padding: 15px;
+}
+
+#contact .form-control::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #e5e5e5;
+}
+
+#contact .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0ed8d6;
+    border: 2px solid #0ed8d6;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 20px 50px;
+    transition: all .4s ease-in-out;
+}
+
+#contact .btn:hover {
+    background-color: #fff;
+    color: #0ed8d6;
+}
+
+/* Section form - end */
+/* COPYRIGHT - start */
+#copyright {
+    padding: 20px;
+    line-height: 50px;
+    background-color: #fff;
+    font-family: 'Montserrat';
+    font-size: .75rem;
+}
+
+#copyright p {
+    letter-spacing: 1px;
+}
+
+#copyright a {
+    color: #222222;
+    margin-left: 10px;
+}
+
+/* COPYRIGHT - end */
+/* TOP-BUTTON - start */
+#top {
+    position: fixed;
+    text-align: center;
+    right: 5%;
+    bottom: 5%;
+    border: 2px solid #0ed8d6;
+    border-radius: 50%;
+    background-color: #0ed8d6;
+    font-size: 2.5em;
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+
+#top:hover {
+    border: 2px solid #0ed8d6;
+    background-color: #fff;
+    color: #0ed8d6;
+    transform: scale(1.1);
+}
+
+/* TOP-BUTTON - end */
